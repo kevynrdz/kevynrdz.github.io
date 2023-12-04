@@ -1,151 +1,289 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="icon" href="./img/favicon.png" type="png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style> 
-    body {
-      justify-content: center;
-      position: center;
-    }
-    .container {
-      display: flex;
-      justify-content: center;
-      position: relative;
-    }
-    
-    a {text-decoration:none;
-      color:#616161;
-      font-weight: lighter;
-      font-family: Arial, Helvetica, sans-serif;
-      text-emphasis-color: #0000;
-      }
-      h1, h2, h3, h4, h5, h6, p {text-decoration:none;
-              text-align: center;
-              color:#ffffff;
-              font-weight: bolder;
-              font-family: Arial, Helvetica, sans-serif;
-            }
-      p {text-decoration:none;
-              text-align: center;
-              color:#5f5f5f;
-              font-weight: bolder;
-              font-family: Arial, Helvetica, sans-serif;
-            }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de diseño 3D, desarrollo de productos e ingeniería. Somos expertos en ofrecer soluciones creativas y tecnológicas.">
+    <meta name="keywords" content="diseño 3D, desarrollo de productos, ingeniería, servicios creativos, soluciones tecnológicas">
+    <meta name="author" content="Nombre de tu empresa">
+
+    <!-- Etiquetas Open Graph para compartir en redes sociales -->
+    <meta property="og:title" content="Nombre de tu empresa">
+    <meta property="og:description" content="Servicios de diseño 3D, desarrollo de productos e ingeniería. Somos expertos en ofrecer soluciones creativas y tecnológicas.">
+    <meta property="og:image" content="URL de la imagen representativa de tu empresa">
+    <meta property="og:url" content="URL de tu sitio web">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
         body {
-    background: url(./img/igni1.png) no-repeat center center fixed;
-    background-color: #ffffff;
-    
-            }
-        button {
-          font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa; /* Fondo del body */
         }
-            .hover-effect:hover {
-        opacity: 0.5;
-        border: none
-      }
-      .hover-effect{
-        border: none
-      }
-      #lista-social li {
-        list-style: none;
-        display:inline;
-        padding-left:5px;
-        padding-right:10px;
-      }
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+        
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+        nav {
+            background-color: #6e6e6e; /* Cambiar el color primario a #FF6347 */
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease-in-out;
+        }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-      </style>
-    <title>Kevyn Rodriguez | Industrial Design</title>
+        nav img {
+            max-height: 40px; /* Ajusta la altura del logo */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centra verticalmente el contenido del navbar */
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px; /* Ajusta el espaciado entre los elementos del navbar */
+            font-weight: bold; /* Letras más gruesas */
+        }
+
+        section {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #fff; /* Fondo de las secciones */
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+        }
+
+        #inicio {
+            width: 100%; /* Asegura que el elemento ocupe todo el ancho de la pantalla */
+            overflow: hidden; /* Evita que el ancho del GIF genere una barra de desplazamiento horizontal */
+        }
+
+        #inicio img {
+            height: auto; /* Mantiene la proporción original de la altura */
+            align-items: center;
+        }
+
+        #nosotros p {
+
+            margin: 0 auto;
+        }
+
+        .servicios-tecnologias img {
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+
+        #tecnologias {
+            background-image: url('background-image.jpg'); /* Reemplaza 'background-image.jpg' con la ruta de tu imagen de fondo */
+            background-size: cover;
+            color: #fff; /* Texto en blanco para mayor visibilidad en la imagen de fondo */
+            padding: 50px 0;
+        }
+
+        #tecnologias h2 {
+            color: #fff; /* Título en blanco en la sección Tecnologías */
+        }
+
+        #contacto {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contacto button {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #000; /* Fondo del footer */
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            justify-content: center;
+            align-items: center; /* Alinea verticalmente los elementos en el footer */
+        }
+
+        footer h4 {
+            margin: 0;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px; /* Ajusta el espaciado entre los enlaces de redes sociales */
+        }
+
+        .social-logo {
+            width: 28px;
+            height: 28px;
+        }
+    </style>
+
+    <title>Servicios de Diseño 3D, Desarrollo de Productos e Ingeniería - rdzlab - Laboratorio I+D+i</title>
 </head>
-
 <body>
-  <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content rounded-4 shadow">
-      <div class="modal-header p-5 pb-4 align-items-center">
-        <a href="./index.html" class="">
-          <svg class="bi me-0" width="30" height="20"><use xlink:href="#bootstrap"></use></svg>
-          <span href="./"><img alt="Brand" width="" height="30" src="./img/brand.svg"></img></span>
-        </a>
-      </div>
-      <br>
-      <div>
-        <p>Diseñador industrial, experimentador y entusiasta.</p>
-      </div>
-      <div class="modal-body p-5 pt-0">
-        <br>
-          <a href="https://kevynrdz.com.ar/rdzlabs" target="_blank"><button  class="w-100 mb-2 btn btn-lg rounded-3 btn-dark"><h5 style="font-family: noto emoji;">🧪</h5>RDZLABS</button></a>
-          <br>
-          <br>
-          <a href="https://kevynrdz.com.ar/rapicad" target="_blank"><button class="w-100 mb-2 btn btn-lg rounded-3 btn-dark"><h5 style="font-family: noto emoji;">⚙️</h5>RAPICAD</button></a>
-          <br>
-          <br>
-          <a href="https://forms.gle/jGartdziA8V8SbgR9" target="_blank"><button class="w-100 mb-2 btn btn-lg rounded-3 btn-dark"><h5 style="font-family: noto emoji;">📞</h5>CONTACTO</button></a>
-          <br>
-          <br>
-          <a href="https://cafecito.app/kevynrdz" target="_blank"><button class="w-100 mb-2 btn btn-lg rounded-3 btn-dark"><h5 style="font-family: noto emoji;">☕</h5>DONACIONES</button></a>
-          <br>
-          <br>
 
-      <div>
-          <ul id="lista-social">
-            <li>
-              <a href="https://twitter.com/kevyn_rdz"><img alt="x" width="" height="28" src="./img/icons/x_logo.png"></img></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/kevyn-rodriguez/"><img alt="linkedin" width="" height="30" src="./img/icons/in_logo.png"></img></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/kevyn.rdz/"><img alt="behance" width="" height="30" src="./img/icons/ig_logo.png"></img></i></a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/kevynrodriguez"><img alt="behance" width="" height="30" src="./img/icons/be_logo.png"></img></i></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@kevynrdz"><img alt="youtube" width="" height="30" src="./img/icons/yt_logo.png"></img></i></a>
-            </li>
-            <li>
-              <a href="https://www.twitch.tv/kevynrdz"><img alt="twitch" width="" height="30" src="./img/icons/tw_logo.png"></img></i></a>
-            </li>
-            <li>
-              <a href="https://github.com/kevynrdz"><img alt="github" width="" height="30" src="./img/icons/git_logo.png"></img></i></a>
-            </li>
-          </ul>
-      </div>
-      </div>
+    <nav>
+        <ul>
+            <li><img src="./img/logo.png" alt="Logo"></li> <!-- Reemplaza "placeholder-logo.png" con la ruta de tu logo -->
+            <li><a href="#inicio" class="text-white">Inicio</a></li>
+            <li><a href="#nosotros" class="text-white">Nosotros</a></li>
+            <li><a href="#servicios" class="text-white">Servicios</a></li>
+            <li><a href="#tecnologias" class="text-white">Tecnologías</a></li>
+            <li><a href="#contacto" class="text-white">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+            <img src="./img/main.gif" width="100%" alt="Main">
+        </section>
+    <section id="nosotros" class="bg-dark">
+        <div class="container">
+            <h2 class="text-white">Nosotros</h2>
+            <p class="text-white">En rdzlabs entendemos que el concepto de un proyecto es tan importante como su implementación en el entorno final de uso. Planificar, organizar y administrar recursos son nuestros pilares para cumplir con plazos y objetivos planteados; por eso es importante conocer y elegir el camino adecuado para llegar al mejor resultado. 
+            La segmentación de un proyecto facilita el proceso de diseño y desarrollo del producto, ya que se puede trabajar de manera más enfocada en todo momento, optimizando los recursos y minimizando los errores. Esto permite identificar soluciones específicas, lo que resulta en un producto final de mayor calidad y eficacia.</p>
+        </div>
+        </section>
+<br>
+<br>
+    <section id="servicios">
+        <div class="container">
+            <h2>Servicios</h2>
+            <p>Brindamos servicios especializados de diseño y desarrollo de productos con un enfoque en la visualización digital y en la manufactura. Contamos con una trayectoria de más de 5 años en la industria y un servicio personalizado en cada proyecto.</p>
+        </div>
+    <div class="servicios-tecnologias">
+
+            <div class="swiffy-slider slider-nav-caretfill slider-nav-autoplay slider-nav-autopause slider-indicators-highlight slider-nav-animation slider-nav-animation-appear">
+                <ul class="slider-container">
+                    <li><img src="./img/cad.jpg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="./img/render.jpg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="./img/fem.jpg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="./img/cam.jpg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="./img/scan.jpg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="./img/measure.jpg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="./img/support.jpg" style="max-width: 100%;height: auto;"></li>
+                </ul>
+            
+                <button type="button" class="slider-nav"></button>
+                <button type="button" class="slider-nav slider-nav-next"></button>
+            
+                <div class="slider-indicators">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+
     </div>
-  </div>
-</div>
+    </section>
 
+    <section id="tecnologias" class="bg-dark">
+        <div class="container">
+            <h2 class="text-white">Tecnologías</h2>
+            <p class="text-white">Para llevar adelante cada proyecto es importante conocer y elegir la tecnología adecuada para llegar al mejor resultado. Como parte de un proceso de consante experimentación, desarrollamos un amplio conjunto de técnicas y equipos para brindar un servicio a medida.</p>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <!-- Primera Columna -->
+                <div class="col-md-3">
+                    <div class="columna">
+                        <h3>Ingeniería inversa</h3>
+                        <p>Escaneo y reconstrucción de modelos utilizando fotografías en alta resolución.</p>
+                    </div>
+                </div>
+    
+                <!-- Segunda Columna -->
+                <div class="col-md-3">
+                    <div class="columna">
+                        <h3>Renderizado, animación y XR</h3>
+                        <p>Creación de archivos multimedia y realidad extendida a partir de modelos tridimensionales.</p>
+                    </div>
+                </div>
+    
+                <!-- Tercera Columna -->
+                <div class="col-md-3">
+                    <div class="columna">
+                        <h3>Prototipos y series bajas</h3>
+                        <p>Prototipamos ideas con tecnología FDM (filamento plástico), DLP (resinas duras), inyección plástica, resina colada y termoformado.</p>
+                    </div>
+                </div>
+    
+                <!-- Cuarta Columna -->
+                <div class="col-md-3">
+                    <div class="columna">
+                        <h3>Mecanizado CNC</h3>
+                        <p>Fabricamos piezas en madera y metal a partir de modelos tridimensionales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </section>
+<br>
+<br>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡Contáctanos para obtener más información!</p>
+        <button class="btn btn-dark">Contactar</button>
+    </section>
+
+    <footer>
+        <br>
+        <br>
+        <a href="https://api.whatsapp.com/send/?phone=5493755542064&text=%C2%A1Hola%21&type=phone_number&app_absent=0">📞 +54 9 3755 542064</h6></a>
+        <br>
+        <br>
+        <!-- Agrega tus enlaces y ajusta los íconos según sea necesario -->
+        <a href="https://www.instagram.com/kevyn.rdz" target="_blank"><img src="./img/ig_logo.png" alt="Red Social 1" class="social-logo"></a>
+        <a href="https://twitter.com/kevyn_rdz" target="_blank"><img src="./img/x_logo.png" alt="Red Social 2" class="social-logo"></a>
+        <a href="https://www.linkedin.com/company/rdzlabs" target="_blank"><img src="./img/in_logo.png" alt="Red Social 3" class="social-logo"></a>
+        <a href="https://www.youtube.com/@kevynrdz" target="_blank"><img src="./img/yt_logo.png" alt="Red Social 4" class="social-logo"></a>
+        <br>
+        <br>
+    </footer>
+
+    <!-- Agrega las siguientes líneas para incluir Bootstrap y Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Script para hacer el navbar transparente al principio y cambiar de color al hacer scroll
+        document.addEventListener("scroll", function() {
+            var nav = document.querySelector("nav");
+            nav.style.backgroundColor = window.scrollY > 0 ? "#FF6347" : "";
+        });
+
+        // Script para hacer el desplazamiento suave al hacer clic en los ítems del menú
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
 </html>
