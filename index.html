@@ -20,9 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <style>
-        a {
-            text-decoration: none;
-        }
+
         span {
             font-family: 'Noto Emoji', sans-serif;
             font-size: 50px;
@@ -280,7 +278,9 @@
         <br>
         <br>
         <br>
-        <a href="#inicio"><h5 style="font-family: 'Noto Emoji', sans-serif; text-decoration: none;">⬆️</h5></a>
+        <nav style="position: relative; background-color: #000;">
+            <a href="#inicio"><h5 style="font-family: 'Noto Emoji', sans-serif; text-decoration: none;">⬆️</h5></a>
+        </nav>
     </footer>
 
     <!-- Agrega las siguientes líneas para incluir Bootstrap y Font Awesome -->
@@ -297,7 +297,7 @@
         });
 
         // Script para hacer el desplazamiento suave al hacer clic en los ítems del menú
-        document.querySelectorAll('a').forEach(anchor => {
+        document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
 
