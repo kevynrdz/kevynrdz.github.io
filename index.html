@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Servicios de diseño 3D, desarrollo de productos e ingeniería. Somos expertos en ofrecer soluciones creativas y tecnológicas.">
@@ -19,6 +20,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <style>
+        a {
+            text-decoration: none;
+        }
+        span {
+            font-family: 'Noto Emoji', sans-serif;
+            font-size: 50px;
+        }
+        cite {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,7 +43,8 @@
         nav {
             background-color: #6e6e6e; /* Cambiar el color primario a #FF6347 */
             color: #fff;
-            padding: 15px;
+            padding: 14px;
+            display: both;
             text-align: center;
             position: fixed;
             width: 100%;
@@ -41,7 +54,7 @@
         }
 
         nav img {
-            max-height: 40px; /* Ajusta la altura del logo */
+            max-height: 65px; /* Ajusta la altura del logo */
         }
 
         nav ul {
@@ -55,7 +68,7 @@
 
         nav ul li {
             display: inline;
-            margin: 0 15px; /* Ajusta el espaciado entre los elementos del navbar */
+            margin: 0 10px; /* Ajusta el espaciado entre los elementos del navbar */
             font-weight: bold; /* Letras más gruesas */
         }
 
@@ -80,7 +93,6 @@
         }
 
         #nosotros p {
-
             margin: 0 auto;
         }
 
@@ -104,6 +116,7 @@
         #contacto {
             max-width: 600px;
             margin: 0 auto;
+            background-color: transparent;
         }
 
         #contacto button {
@@ -155,9 +168,14 @@
     <section id="nosotros" class="bg-dark">
         <div class="container">
             <h2 class="text-white">Nosotros</h2>
-            <p class="text-white">En rdzlabs entendemos que el concepto de un proyecto es tan importante como su implementación en el entorno final de uso. Planificar, organizar y administrar recursos son nuestros pilares para cumplir con plazos y objetivos planteados; por eso es importante conocer y elegir el camino adecuado para llegar al mejor resultado. 
-            La segmentación de un proyecto facilita el proceso de diseño y desarrollo del producto, ya que se puede trabajar de manera más enfocada en todo momento, optimizando los recursos y minimizando los errores. Esto permite identificar soluciones específicas, lo que resulta en un producto final de mayor calidad y eficacia.</p>
+            <p class="text-white">Como profesionales en el rubro del diseño, prototipado y manufactura, entendemos que el concepto de un proyecto es tan importante como su implementación en el entorno final de uso. <b>Planificar, organizar y administrar recursos son nuestros pilares</b> para cumplir con plazos y objetivos planteados; por eso es importante conocer y elegir el camino adecuado para llegar al mejor resultado. 
+            La <b>segmentación de un proyecto</b> facilita el proceso de diseño y desarrollo del producto, ya que se puede trabajar de manera más enfocada en todo momento, optimizando los recursos y minimizando los errores. Esto permite identificar soluciones específicas, lo que resulta en un producto final de mayor calidad y eficacia.</p>
         </div>
+    <br>
+    <br>
+    <div class="container">
+        <img src="./img/background-image.jpg" width="100%">
+    </div>
         </section>
 <br>
 <br>
@@ -167,8 +185,9 @@
             <p>Brindamos servicios especializados de diseño y desarrollo de productos con un enfoque en la visualización digital y en la manufactura. Contamos con una trayectoria de más de 5 años en la industria y un servicio personalizado en cada proyecto.</p>
         </div>
     <div class="servicios-tecnologias">
-
-            <div class="swiffy-slider slider-nav-caretfill slider-nav-autoplay slider-nav-autopause slider-indicators-highlight slider-nav-animation slider-nav-animation-appear">
+        <br>
+        <br>
+            <div class="swiffy-slider slider-nav-caretfill slider-nav-autoplay slider-indicators-highlight slider-nav-animation">
                 <ul class="slider-container">
                     <li><img src="./img/cad.jpg" style="max-width: 100%;height: auto;"></li>
                     <li><img src="./img/render.jpg" style="max-width: 100%;height: auto;"></li>
@@ -181,12 +200,6 @@
             
                 <button type="button" class="slider-nav"></button>
                 <button type="button" class="slider-nav slider-nav-next"></button>
-            
-                <div class="slider-indicators">
-                    <button class="active"></button>
-                    <button></button>
-                    <button></button>
-                </div>
             </div>
 
     </div>
@@ -204,32 +217,36 @@
                 <!-- Primera Columna -->
                 <div class="col-md-3">
                     <div class="columna">
-                        <h3>Ingeniería inversa</h3>
-                        <p>Escaneo y reconstrucción de modelos utilizando fotografías en alta resolución.</p>
+                        <span>📐</span>
+                        <h3>Diseño paramétrico e ingeniería inversa</h3>
+                        <p>Modelamos objetos 3D parametrizables desde cero (Solidworks, CADBuilder) o los reconstruímos digitalmente usando fotografías en alta resolución.</p>
                     </div>
                 </div>
     
                 <!-- Segunda Columna -->
                 <div class="col-md-3">
                     <div class="columna">
+                        <span>🖥️</span>
                         <h3>Renderizado, animación y XR</h3>
-                        <p>Creación de archivos multimedia y realidad extendida a partir de modelos tridimensionales.</p>
+                        <p>Creación de archivos multimedia con motores gráficos de última generación (Cycles, UE5, Vulkan) y aplicaciones de realidad extendida con modelos tridimensionales.</p>
                     </div>
                 </div>
     
                 <!-- Tercera Columna -->
                 <div class="col-md-3">
                     <div class="columna">
+                        <span>🦾</span>
                         <h3>Prototipos y series bajas</h3>
-                        <p>Prototipamos ideas con tecnología FDM (filamento plástico), DLP (resinas duras), inyección plástica, resina colada y termoformado.</p>
+                        <p>Materializamos ideas con tecnología FDM (impresión con filamento plástico), DLP (impresión con resinas), inyección plástica, resina colada y termoformado.</p>
                     </div>
                 </div>
     
                 <!-- Cuarta Columna -->
                 <div class="col-md-3">
                     <div class="columna">
-                        <h3>Mecanizado CNC</h3>
-                        <p>Fabricamos piezas en madera y metal a partir de modelos tridimensionales.</p>
+                        <span>🔩</span>
+                        <h3>Mecanizado CNC Routing y láser</h3>
+                        <p>Exportamos modelos 3D a una amplia gama de plataformas (Mach 3 y 4, LinuxCNC, GRBL, etc.) para su posterior fabricación en madera y metal.</p>
                     </div>
                 </div>
             </div>
@@ -238,26 +255,32 @@
         </section>
 <br>
 <br>
-
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¡Contáctanos para obtener más información!</p>
-        <button class="btn btn-dark">Contactar</button>
+        <div class="container"></div>
+            <h2>Escribinos para más información</h2>
+            <a href="https://forms.gle/pQP1Fh999qEsgqkJ6" target="_blank"><button class="btn btn-dark">Contactar</button></a>
+        </div>
     </section>
-
     <footer>
         <br>
         <br>
-        <a href="https://api.whatsapp.com/send/?phone=5493755542064&text=%C2%A1Hola%21&type=phone_number&app_absent=0">📞 +54 9 3755 542064</h6></a>
+        <img src="./img/logo.png" width="150" height="auto">
         <br>
+        <cite>Diseñado por kevynrdzdesignlab © 2023 - Todos los derechos reservados.</cite>
+        <br>
+        <br>
+        <h6>Viamonte 169, Oberá, Misiones. CP 3360</h6>
+        <a href="https://api.whatsapp.com/send/?phone=5493755542064&text=%C2%A1Hola%21&type=phone_number&app_absent=0"><h6>📞 +54 9 3755 542064</h6></a>
         <br>
         <!-- Agrega tus enlaces y ajusta los íconos según sea necesario -->
         <a href="https://www.instagram.com/kevyn.rdz" target="_blank"><img src="./img/ig_logo.png" alt="Red Social 1" class="social-logo"></a>
         <a href="https://twitter.com/kevyn_rdz" target="_blank"><img src="./img/x_logo.png" alt="Red Social 2" class="social-logo"></a>
-        <a href="https://www.linkedin.com/company/rdzlabs" target="_blank"><img src="./img/in_logo.png" alt="Red Social 3" class="social-logo"></a>
+        <a href="https://www.linkedin.com/company/rdzlab" target="_blank"><img src="./img/in_logo.png" alt="Red Social 3" class="social-logo"></a>
         <a href="https://www.youtube.com/@kevynrdz" target="_blank"><img src="./img/yt_logo.png" alt="Red Social 4" class="social-logo"></a>
         <br>
         <br>
+        <br>
+        <a href="#inicio"><h5 style="font-family: 'Noto Emoji', sans-serif; text-decoration: none;">⬆️</h5></a>
     </footer>
 
     <!-- Agrega las siguientes líneas para incluir Bootstrap y Font Awesome -->
@@ -274,7 +297,7 @@
         });
 
         // Script para hacer el desplazamiento suave al hacer clic en los ítems del menú
-        document.querySelectorAll('nav a').forEach(anchor => {
+        document.querySelectorAll('a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
 
