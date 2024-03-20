@@ -32,7 +32,7 @@
             font-size: 10px;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -41,16 +41,16 @@
         
 
         nav {
-            background-color: #6e6e6e; /* Cambiar el color primario a #FF6347 */
+            background-color: #6e6e6e; /* Cambiar el color primario */
             color: #fff;
-            padding: 14px;
-            display: both;
+            padding: 15px;
+            display: flex;
             text-align: center;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            transition: background-color 0.3s ease-in-out;
+            transition: background-color 0.5s ease-in-out;
         }
 
         nav img {
@@ -62,14 +62,15 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: center; /* Centra verticalmente el contenido del navbar */
+            justify-content: left;
+            align-items: left; /* Centra verticalmente el contenido del navbar */
         }
 
         nav ul li {
             display: inline;
-            margin: 0 10px; /* Ajusta el espaciado entre los elementos del navbar */
-            font-weight: bold; /* Letras más gruesas */
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0 3px; /* Ajusta el espaciado entre los elementos del navbar */
+            font-weight:bolder; /* Letras más gruesas */
         }
 
         section {
@@ -103,7 +104,7 @@
         }
 
         #servicios {
-            background-image: url('background-image.jpg'); /* Reemplaza 'background-image.jpg' con la ruta de tu imagen de fondo */
+            background-image: url('background-image.png'); /* Reemplaza 'background-image.jpg' con la ruta de tu imagen de fondo */
             background-size: cover;
             color: #fff; /* Texto en blanco para mayor visibilidad en la imagen de fondo */
             padding: 50px 0;
@@ -154,6 +155,7 @@
     <nav>
         <ul>
             <li><img src="./img/logo.png" alt="Logo"></li> <!-- Reemplaza "placeholder-logo.png" con la ruta de tu logo -->
+            <li><a class="text-white">   |   </a></li>
             <li><a href="#inicio" class="text-white">Inicio</a></li>
             <!--<li><a href="#nosotros" class="text-white">Nosotros</a></li>-->
             <li><a href="#servicios" class="text-white">Servicios</a></li>
@@ -162,29 +164,22 @@
         </ul>
     </nav>
 <section>
-    <center><img src="./img/background-image.jpg" width="100%"></center>
+    <center><img src="./img/background-image.png" width="100%"></center>
 </section>
-<section>
+<br>
+<br>
+<section class="bg-white">
     <div class="container">
-        <div class="row">
-            <!-- Primera Columna -->
-            <div class="col-md-6">
-                <div class="columna">
-                    <div class="sketchfab-embed-wrapper" style="background-color: #fff;"> <iframe width="600" height="600" frameborder="0" mozallowfullscreen="false" webkitallowfullscreen="false" allow="autoplay"  execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/4a0b51c7395a433b9c1b32047b722b6f/embed?autospin=0&autostart=1&log"> </iframe>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Segunda Columna -->
-            <div class="col-md-6">
-                <div class="columna">
-                    <div class="container" style="background-color: #4141411a; border-radius: 20px; width: 400px; height: 250px;">
-                        <h3><br>Modelado, animación y realidad extendida</h3>
-                        <p>Creación de modelos 3D estáticos o animados e integración en motores gráficos orientados a visualización arquitectónica, producto/ e-commerce, videojuegos o aplicaciones XR.</p>
-                    </div>
-                </div>
-            </div>
-</section>
+        <h1 style="font-weight: bolder;">Experiencia y tecnología a disposición de tu proyecto.</h1>
+        <p class="">Más de <b>8 años en el modelado 3D</b> y <b>5 años en el diseño profesional,</b> especializado en <b>diseño aeroespacial y previsualización de productos tecnológicos,</b> permiten adaptar un esquema de trabajo sólido,
+            logrando alcanzar los objetivos de tu proyecto en tiempo record y con una calidad superadora gracias a la mejor <b>tecnología de renderizado en alta resolución.</b></p>
+    </div>
+    <div>
+        <center><img src="./img/esp-image.jpg" width="40%"></center>
+    </div>
+    <br>
+    <br>
+    </section>
     <section id="servicios" class="bg-dark">
         <div class="container">
             <h2 class="text-white">Creación de activos digitales, renderizado y animación de productos.</h2>
@@ -198,7 +193,7 @@
                 <div class="col-md-3">
                     <div class="columna">
                         <span>📐</span>
-                        <h3>Diseño paramétrico e ingeniería inversa</h3>
+                        <h4>Diseño paramétrico e ingeniería inversa</h4>
                         <p>Modelado 3D parametrizable desde cero (Solidworks, CADBuilder) y reconstrucción digital usando fotografías en alta resolución.</p>
                     </div>
                 </div>
@@ -207,8 +202,8 @@
                 <div class="col-md-3">
                     <div class="columna">
                         <span>🖥️</span>
-                        <h3>Renderizado, animación y XR</h3>
-                        <p>Creación de archivos multimedia con motores gráficos de última generación (Cycles, UE5, Vulkan) y aplicaciones de realidad extendida con modelos tridimensionales.</p>
+                        <h4>Texturizado, animación y renderizado</h4>
+                        <p>Creación de archivos multimedia high-res con motores gráficos de última generación (Cycles, UE5, Vulkan).</p>
                     </div>
                 </div>
     
@@ -216,7 +211,7 @@
                 <div class="col-md-3">
                     <div class="columna">
                         <span>🦾</span>
-                        <h3>Maquetización y Prototipado</h3>
+                        <h4>Maquetización y Prototipado</h4>
                         <p>Materialización con tecnología FDM (impresión con filamento plástico), DLP (impresión con resinas), resina colada, termoformado, etc.</p>
                     </div>
                 </div>
@@ -225,8 +220,8 @@
                 <div class="col-md-3">
                     <div class="columna">
                         <span>🔩</span>
-                        <h3>Mecanizado CNC Routing y láser</h3>
-                        <p>Exportamos modelos 3D a una amplia gama de plataformas (Mach 3 y 4, LinuxCNC, GRBL, etc.) para su posterior fabricación en madera y metal.</p>
+                        <h4>Mecanizado CNC Routing y láser</h4>
+                        <p>Exportamos modelos 3D a una amplia gama de plataformas (Mach 3 y 4, LinuxCNC, GRBL, etc.) para su posterior fabricación en diversos materiales.</p>
                     </div>
                 </div>
             </div>
@@ -248,8 +243,8 @@
 
     <section id="contacto">
         <div class="container"></div>
-            <h2>Si tenés un proyecto, duda o consulta, no dudes en contactarte</h2>
-            <a href="https://forms.gle/pQP1Fh999qEsgqkJ6" target="_blank"><button class="btn btn-dark">Contactar</button></a>
+            <h2>Si tenés un proyecto o consulta, no dudes en contactarte</h2>
+            <a href="https://forms.gle/pQP1Fh999qEsgqkJ6" target="_blank"><button class="btn btn-dark">Escribí tu mensaje</button></a>
         </div>
     </section>
     <footer>
